@@ -1,0 +1,12 @@
+{
+  "name": "tiny-t",
+  "version": "0.0.0",
+  "description": "Project assignments",
+  "author": "Jon de la Motte",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "main": "./index"
+}
