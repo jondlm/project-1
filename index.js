@@ -2,16 +2,34 @@
 
 
 
-function template(string){
-  var matches = string.match(/\{\{\s*(\w+)\s*\}\}/g);
+function template(templateString){
+  var matches = templateString.match(/\{\{\s*(\w+)\s*\}\}/g),
+      rendered = '';
 
   function transform(obj){
+    if (!obj) {return null};
 
+    var keys = Object.keys(obj);
+
+    // For each of the input keys, loop through and swap them
+    keys.forEach(function(key){
+      matches.filter(function(i){
+        i.match(/\w+/) === key ? true : false;
+      });
+
+      rendered = rendered.replace(item);
+
+    });
 
     return rendered;
   }
   return transform;
 }
+
+
+/****************************************
+                 EXPORTS
+****************************************/
 
 module.exports = template;
 
