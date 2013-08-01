@@ -1,3 +1,5 @@
+module.exports = template;
+
 // Main function that accepts a string with {{ }} sections in it that will later be replaced
 function template(templateString){
   var matches = templateString.match(/\{\{\s*\w+\s*\}\}/g);
@@ -8,13 +10,6 @@ function template(templateString){
 
   return transform;
 }
-
-/****************************************
-                 EXPORTS
-****************************************/
-
-module.exports = template;
-
 
 /****************************************
                  HELPERS
@@ -34,7 +29,6 @@ function traverseAndReplace(str, arr, obj) {
 
     if (key && obj[key]) {
       rendered = rendered.replace(arr[i], obj[key]);
-      console.log(rendered);
       return tryNext(i+1);
     }
   }

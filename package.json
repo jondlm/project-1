@@ -1,11 +1,9 @@
 {
   "name": "tiny-t",
-  "version": "0.0.0",
-  "description": "Project assignments",
+  "version": "0.0.1",
+  "description": "A very simple templating language like handlebars",
   "author": "Jon de la Motte",
-  "dependencies": {
-    "object-dive": "0.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "node tests/test.js"
