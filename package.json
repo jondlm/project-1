@@ -1,6 +1,6 @@
 {
   "name": "tiny-t",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A very simple, and non-robust, template module",
   "author": "Jon de la Motte",
   "dependencies": {},
