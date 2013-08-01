@@ -1,7 +1,7 @@
 {
   "name": "tiny-t",
   "version": "0.0.1",
-  "description": "A very simple templating language like handlebars",
+  "description": "A very simple, and non-robust, template module",
   "author": "Jon de la Motte",
   "dependencies": {},
   "devDependencies": {},
